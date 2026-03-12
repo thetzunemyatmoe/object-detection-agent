@@ -1,0 +1,102 @@
+OFFICIAL DOCS:
+1. Source name: Object Detection (Ultralytics)
+   URL: https://www.ultralytics.com/glossary/object-detection#the-mechanics-of-detection
+   Format: html
+
+2. Source name: What is Object Deteciton? (IBM) 
+   URL: https://www.ibm.com/think/topics/object-detection
+   Format: html
+
+3. Source name: YOLO Object Detection Explained (Datacamp)
+   URL: https://www.datacamp.com/blog/yolo-object-detection-explained
+   Format: html
+
+4. Source name: Getting started with Object Detection (Label Studio)
+   URL: https://labelstud.io/blog/getting-started-with-object-detection/
+   Format: html
+
+RESEARCH PAPERS:
+1. Paper: Object Detection with Deep Learning: A Review
+   URL: https://arxiv.org/pdf/1807.05511
+   Format: pdf
+
+2. Paper: Object detection in 20 years: A survey
+   URL: https://arxiv.org/pdf/1905.05055
+   Format: pdf
+
+3. Paper: Object Detection
+   URL: https://www.researchgate.net/profile/Yali-Amit/publication/339792032_Object_Detection/links/5ff7429345851553a02adcc0/Object-Detection.pdf
+   Format: pdf
+
+4. Paper: Fast YOLO: A fast you only look once system for real-time embedded object detection in video
+   URL: https://arxiv.org/pdf/1709.05943
+   Format: pdf
+
+5. Paper: You only look once: Unified, real-time object detection
+   URL: https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Redmon_You_Only_Look_CVPR_2016_paper.pdf
+   Format: pdf
+
+6. Paper: You only look once: Unified, real-time object detection
+   URL: https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Redmon_You_Only_Look_CVPR_2016_paper.pdf
+   Format: pdf
+
+7. Paper: Faster r-cnn: Towards real-time object detection with region proposal networks
+   URL: https://proceedings.neurips.cc/paper_files/paper/2015/file/14bfa6bb14875e45bba028a21ed38046-Paper.pdf
+   Format: pdf
+
+8. Paper: Ssd: Single shot multibox detector
+   URL: https://arxiv.org/pdf/1512.02325
+   Format: pdf
+
+9. Paper: Object detection system based on convolution neural networks using single shot multi-box detector
+   URL: https://www.sciencedirect.com/science/article/pii/S187705092031276X/pdf?md5=5b09d517144c445745644d40fa0ecc13&pid=1-s2.0-S187705092031276X-main.pdf
+   Format: pdf
+
+10. Paper: Focal loss for dense object detection
+   URL: https://openaccess.thecvf.com/content_ICCV_2017/papers/Lin_Focal_Loss_for_ICCV_2017_paper.pdf
+   Format: pdf
+
+
+11. Paper: Focal loss for dense object detection
+   URL: http://openaccess.thecvf.com/content_ICCV_2017/papers/Lin_Focal_Loss_for_ICCV_2017_paper
+   Format: pdf
+
+12. Paper: Efficientdet: Scalable and efficient object detection
+   URL: https://openaccess.thecvf.com/content_CVPR_2020/papers/Tan_EfficientDet_Scalable_and_Efficient_Object_Detection_CVPR_2020_paper.pdf
+   Format: pdf
+
+
+
+TUTORIALS:
+1. Title: Object Detection Part-1: Introduction to object detection
+   URL: https://medium.com/@kattarajesh2001/object-detection-part-1-introduction-to-object-detection-321f1fd56295
+   Type: html
+
+2. Title: Object Detection part-2: Two Stage Detectors: R-CNN,Fast R-CNN,Faster R-CNN
+   URL: https://medium.com/@kattarajesh2001/object-detection-part-2-two-stage-detectors-r-cnn-fast-r-cnn-faster-r-cnn-026e5fac5dd0
+   Type: html
+
+3. Title: Object Detection Part-3: One Stage Detectors: YOLO
+   URL: https://medium.com/@kattarajesh2001/object-detection-part-3-one-stage-detectors-yolo-a4a6b4dd2d33
+   Type: html
+
+4. Title: Convolutional Neural Network From Scratch
+   URL: https://medium.com/@kattarajesh2001/convolutional-neural-network-from-scratch-0d7513d62923
+   Type: html
+
+5. Title: Convolutional Neural Networks In Depth
+   URL: https://medium.com/@kattarajesh2001/convolutional-neural-networks-in-depth-c2fb81ebc2b2
+   Type: html
+
+6. Title: Activation Functions In Depth
+   URL: https://medium.com/@kattarajesh2001/activation-functions-in-depth-3bd653f88ec7
+   Type: html
+
+7. Title: Object Detection: State of the Art and Modern Approaches
+   URL: https://medium.com/@saifhajsalem12/object-detection-state-of-the-art-and-modern-approaches-eaa5e6bfb46b
+   Type: html
+
+
+IMPLEMENTATION GUIDES:
+1. Source:
+   URL:
