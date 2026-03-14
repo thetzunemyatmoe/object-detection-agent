@@ -1,0 +1,133 @@
+Getting started with Object Detection
+With the world becoming increasingly digitized, the need for advanced computer vision techniques like object detection has become more pressing than ever. By identifying and localizing objects within an image or video, this powerful technology has numerous applications today, from self-driving cars to security systems.
+However, leveraging object detection can be daunting, particularly when you’re new to the field.
+In this article, we’ll explore what object detection is, the challenges involved in implementing it, and share a step-by-step breakdown of getting started with this exciting technology.
+What is object detection?
+Object detection is a computer vision technique that identifies and locates objects in digital images or videos. Think: cars, people, cars, buildings, chairs, and animals. It essentially seeks to give computers a pair of eyes that allows them to establish an object‘s position, just like humans do.
+Object detection models receive an image or video as an input and output them with bounding boxes and labels on every detected object. They do this by answering the following two questions:
+- What is the object? This allows the model to identify the object in a specific image.
+- Where is the object? This allows the model to identify the object's exact location within the image or video.
+Suppose an image features two persons with their dog. Once you input the image into an object detection model, it’ll immediately classify and label the types of objects found in the image (in this case, the person and the dog) as well as locate instances of them within it.
+Object detection vs. Image recognition
+Object detection and image recognition are similar but different concepts.
+Image recognition simply identifies the object present within an image or video and displays its name alongside the image. On the other hand, object direction labels each instance of an object within the image or video with a bounding box.
+Continuing with our previous example, object detection will generate bounding boxes around each person and dog, along with their exact coordinates. In contrast, image recognition will only display the word ‘Person’ and ‘Dog‘ alongside the image, regardless of the number of persons in the image.
+Object detection use cases
+Next, let’s explore some examples of how object detection works in the real world.
+1. Collision detection for driver assist
+Self-driving cars are one of the most significant and evolutionary use cases of object detection in the tech world.
+Autonomous vehicle systems rely heavily on the high accuracy of the detectors to spot objects on the road in real time to ensure safe driving. What makes these detectors even more special is that they can classify stationary or moving objects while working alongside other components to achieve accurate mapping, localization, and tracking.
+2. Video surveillance
+Object detection models are incredibly useful for video surveillance, thanks to their ability to accurately label multiple instances of objects in real time. Once video frames are sequentially fed to the model, it can spot any abnormal activity in say, a warehouse, a bank, or a retail store.
+Moreover, the object detection model can send automated alerts to relevant authorities in case of any alarming or irregular activity.
+3. Crowd counting
+Post-pandemic, crowd counting has turned out to be another essential object detection use case. For instance, if a government entity wants to prevent large crowds in public areas, it can use crowd counting systems with object detection to measure the density of people in a specific location and determine the number of people in a given area.
+The systems can automatically spot highly congested places, enabling efficient management of crowded spaces.
+4. Anomaly detection
+Anomaly detection was traditionally a wholly manual and time-consuming process. Luckily, object detection has since revolutionized it, allowing you to develop custom-trained and automated systems that are not only fast but also highly cost-effective.
+Anomaly detection through object detection works differently depending on the industry. For instance, object detection models can identify plants that have been affected by a disease, saving farmers considerable time and effort during the processing of materials or producing goods.
+5. Medical image analysis
+Object detection has proved to be incredibly useful in the health industry as well. For example, medical imaging produces a vast amount of visual data that needs to be accurately analyzed in detail to diagnose health issues among patients. Custom-trained object detection models can spot minor details in, say, an ultrasound, that may be missed by the human eye.
+This has helped surgeons and radiologists to work more efficiently where they can now go through as many as 200 medical images in a day.
+Challenges with object detection
+Despite the significant progress in computer vision, object detection is still a complex process.
+Here are some of the biggest challenges with the tech today:
+1. Viewpoint variation
+Objects viewed from different angles may look entirely different. For example, the top of a cake looks completely different from its side view. As most of the object models are trained and tested in ideal situations, it can be difficult for them to recognize objects from different viewpoints.
+2. Occlusion
+Objects in an image or video that are only partly visible can also be difficult to detect for models.
+For example, in an image of a person holding a cup in their hands, it’ll be difficult for the object detector to recognize it as an object since a large part of the cup will likely be covered by the person’s hands.
+3. Deformation
+It’s possible for objects of interest to be flexible and therefore appear deformed to an object detection model.
+For example, an object detector trained to recognize a rigid object (for example, a person sitting, standing, or walking) may find it difficult to detect the same person in contorted positions (for example, a person performing a yoga asana).
+4. Multiple aspect ratios and spatial sizes
+Objects can vary in terms of aspect ratio and size. It’s crucial for the detection algorithms to be able to identify different objects with different views and skills, but it's easier said than done.
+5. Object localization
+When it comes to object detection, classifying an object and determining its position (also known as the object localization task) accurately are two major challenges.
+Resolving them requires a sophisticated approach, with researchers often using an intensive multi-task loss function to create repercussions for both misclassifications and errors in localization. Multi-task loss functions are a valuable tool in object detection, helping improve the accuracy and reliability of object detection systems.
+6. Lighting
+How an object is illuminated has a profound impact on the detection process. The same object can exhibit different colors and shades under different types of lighting, due to their impact on the object’s pixel level.
+So, when an object is poorly illuminated, it becomes less visible, making it more challenging for the detector to identify the object.
+7. Cluttered or textured background
+If the background in the image has a lot of textures, the detector may find it difficult to locate the objects of interest. For example, if an image shows a cat sitting on a rug with a similar color and texture to its fur, the object detector may struggle to distinguish the cat from the rug (the background).
+Likewise, the detector may have a hard time recognizing individual items of interest when processing images that feature several objects.
+8. Intra-class variation
+Objects belonging to the same category can vary significantly in shape and size. For example, furniture and houses can have different shapes and sizes.
+It’s crucial for an object detection model to accurately identify these objects as belonging to the same category despite the differences. At the same time, it should be able to distinguish them from objects of other categories.
+9. Real-time detection speed
+Processing certain videos in real-time can be particularly challenging, as object detection algorithms may not be fast enough to accurately classify and localize the different objects in motion.
+10. Limited data
+Another significant problem with object detection is the limited amount of annotated data.
+Despite data collection efforts, detection datasets remain substantially smaller in scale and vocabulary than image classification datasets. This lack of data affects the accuracy and robustness of object detection algorithms, which makes the task of developing reliable and effective detection models more challenging.
+How to get started with object detection
+As mentioned, object detection is all about detecting and localizing objects within an image or video. But to be able to do this, you have to custom-train your object detection model or object detector.
+Here is a step-by-step breakdown of how object detection works:
+1. Create your object detection algorithm
+The first step is to choose an appropriate machine-learning algorithm to perform the object detection process. Without a machine learning-based model, you cannot identify and classify the important objects within an image or video.
+This is also where you need to understand the difference between single-stage detectors and two-stage detectors.
+Two-stage detectors
+Two-stage detectors, as the name suggests, work in two stages:
+- object region proposal with conventional computer vision methods or deep networks; followed by
+- object classification with bounding box regression
+The detectors propose approximate object regions using the features and then utilize the features for image classification and bounding box regression to precisely identify the object. Although two-stage detectors offer high detection accuracy, they are slower (in terms of frames per second) compared to single-stage detectors, since each image requires multiple inference steps.
+Common examples of two-stage detectors include region convolution neural network (RCNN), Faster R-CNN, Mask R-CNN, and a granulated region convolution neural network (G-RCNN).
+Single-stage detectors
+Single-stage detectors or one-stage detectors predict bounding boxes over an entire image or video without the region proposal step of two-stage detectors. As a result, the detection process takes less time and is suitable for real-time applications.
+Other benefits include faster detection speed and greater structural simplicity and efficiency compared to two-stage detectors. However, one-stage detectors aren’t as good as the latter at recognizing irregularly shaped objects or a group of small objects.
+Common examples of one-stage detectors are YOLO, SSD, and RetainerNet.
+How to choose the right object detection algorithm? Consider your specific needs, such as accuracy vs. speed, object size and shape, and the type of images or videos you’ll be working with.
+Note: Check out our guide on how to create datasets for training YOLO object detection with Label Studio.
+2. Select the appropriate object detection tool
+Depending on whether you’re working with images or videos, you’ll want to select different tools and services to carry out the object detection process.
+For starters, you can use a library, such as ImageAI or Yolov2_TensorFlow, which provides pre-built algorithms for object detection you can use within your own code. These libraries typically have a range of features and parameters that are customizable to suit your individual needs.
+Alternatively, you can use cloud-based services like Amazon Rekognition/Sagemaker, Ultralytics, or Azure Cognitive Services that offer APIs, allowing you to easily integrate object detection capabilities into your application or system. These services can be particularly useful if you don’t have the resources or expertise to build and maintain your own object detection models.
+How to select the right object detection tool or service? Consider factors such as accuracy, speed, user-friendliness, and cost of each tool. Note that some tools may be better suited for certain types of objects or environments. So, doing some testing and experimentation might be better to find the right fit for your use case.
+3. Implement a classification strategy
+You need a robust classification strategy to teach a machine-learning model how to classify different objects in the input image or video. This involves tagging images of data with labels that indicate what object is present in the image.
+When labeling your dataset for an object detection model, keep the following best practices in mind:
+- Ensure balanced labeling of images containing your targeted features and those without them. For example, if you want to train the object detection model to recognize patios, make sure there are an equal number of images depicting homes with and without patios.
+- Create bonding boxes that can encompass the entire relevant components visible in the photos.
+- Label at least 50 images of your targeted features to train the model adequately.
+- Use images of the same resolution quality and angles as those you intend to process with the trained model.
+- Limit the number of objects you want to detect to improve model accuracy for those objects.
+- Define data sources for model training
+To save time while improving accuracy, you can use a data labeling tool like Label Studio to annotate images with the necessary tags for object detection training.
+Another important aspect to consider here is the scalability of your data labeling process. With Label Studio, you can ensure your process is meeting the basic tenets of building a scalable data labeling process like clear documentation, easy onboarding of new annotators, quality consistency between annotators, and most importantly, a high level of quality.
+Note: Get our Image Object Detection Data Labeling template to perform object detection with rectangular bounding boxes using Label Studio.
+4. Define data sources for model training
+When training a machine learning model, having access to quality data to use as input is extremely crucial. You have two primary sources of data that you can use for model training: public data sets and your own data.
+Public data sets
+Public data sets refer to data sets that are usually compiled by the government or academic organizations for use in research and development and can be accessed online.
+What’s more, you’ll find several large public data sets available specifically for object detection training, like the Common Objects in Context (COCO) data set and the Open Images data set. These data sets have thousands—or even millions—of images with annotations, such as bounding boxes around objects and labels identifying the same.
+By using these data sets, you can save a significant amount of time and resources that would otherwise be spent collecting and labeling data.
+Private data sets
+It’s possible that public data sets may not cover the specific use cases or domains you may be training your model for. This is where your own data or private data set comes into the picture.
+Your private data is the data collected and curated by you, which can come from a variety of sources like images from camera sensors, audio recordings, and text documents.
+The key advantage of using your own data is it’s already highly specific to the use case and domain, making it more customized and accurate for training the object detection model than a public data set.
+5. Train the object detection model and improve results
+This step is all about fine-tuning and training your object detection model. The more efficient your training, the more accurate your results are.
+To get started, you have to first develop a data set using the following three-step process:
+- Training: Use a subset of the data (this should be 60% of your targeted data set) to teach the model to recognize patterns and make predictions.
+- Validation: Create a validation data set comprising new, unseen data to evaluate the performance of your model. Make any required adjustments to the model’s architecture or training parameters to improve its performance.
+- Testing: After optimizing the model using the validation data, test it on a separate, unbiased data set for a final evaluation of its performance. This testing data set should represent the real-world data that the model that will be applied.
+Quality labeling throughout the process is very crucial, too. This includes adding metadata to raw data, such as images and videos, to enable machine learning algorithms to better recognize and classify objects or patterns in the data.
+For proper labeling throughout the data annotation process, you need to collect data on annotation accuracy. Here's how to go about this:
+- Measure annotation accuracy through an Inter-Annotator Agreement (IAA), which is a measure of the level of agreement between two or more annotators. Use it to determine if the annotator is consistent in the labeling and identify areas where annotation guidelines should be clarified.
+- Analyze random samples of the annotated data to ensure proper labeling. Select a representative sample of the data for your annotators to verify and determine whether the annotations are consistent with the guidelines and without errors or inconsistencies.
+- Do frequent reviews of the currently annotated data to ensure ongoing accuracy. This will help you identify any changes in annotation quality or guidelines and allow for corrections to be made before a significant amount of data is improperly labeled.
+- Define a procedure for revisiting improperly annotated data. It’s inevitable that some data will be mislabelled, creating a need for a process that helps you revisit and correct errors when needed. This can involve re-annotating the data or refining the guidelines to prevent future errors.
+Once you’ve sorted out the labeling bit, focus on validating your data set by checking the accuracy of the bounding box predictions made by the model.
+Measure the Precision-Recall curve
+To ensure the object detection model’s reliability, you need to measure the Precision (the proportion of correct predictions made by your model) and Recall (the proportion of actual positive instances that were correctly identified) metrics.
+Note that you cannot use these metrics independently, as a model with high recall but low precision may have many false positives, and a model with high precision but low recall will only classify some of the positive samples.
+Instead, you need to calculate the precision-recall curve to determine the relationship between the precision and recall values of your model as a function of its confidence score threshold. This will help you gauge the model's overall performance.
+Using data augmentation
+To improve the object detection model’s accuracy, you can modify the pre-trained model’s architecture and train it on the new data set, thereby improving its accuracy. This process of fine-tuning can help you ensure the model is better optimized for the specific object detection task.
+You can also perform data augmentation on the actual data set—not the training or validation data sets—to improve the model’s training accuracy.
+Apply custom data augmentation to the running data, such as flipping, scaling, and rotating the original images, to create a more diverse set of training data. This can result in better model performance and reduce overfitting which, in turn, will make your model object detection model more effective when working with new, unseen data.
+Label Studio’s approach to object detection
+Label Studio empowers you to efficiently and precisely label the initial dataset and train an automated object detection model such as YOLO. Alongside this, Label Studio also offers the option to integrate a model and use the platform for the preliminary labeling of the dataset. Once completed, you can have someone from your team review and modify the automated labels to retrain the model as required.
+This approach not only provides more flexibility for object detection but also generates more reliable results, thanks to the more accurate and scalable datasets.
+Moreover, Label Studio enables you to customize other parameters of the object detection process according to your specific environment or use case. For example, you can take advantage of GPU support to accelerate the pre-annotation of images and adjust bounding box thresholding.
+Interested in learning more?
+Come take Label Studio for a spin with Hugging Face Spaces to experience firsthand what makes us the most popular open-source leveling platform. You can also check out the Label Studio blog to learn more about data labeling best practices for each data type, including images, videos, and audio.

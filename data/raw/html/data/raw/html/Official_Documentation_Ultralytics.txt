@@ -1,0 +1,19 @@
+Explore the fundamentals of object detection. Learn how Ultralytics YOLO26 identifies and locates objects in real-time with unmatched speed and accuracy.
+Object detection is a pivotal technology in the field of Computer Vision (CV) that allows computer systems to identify and locate specific items within visual data. Unlike simpler image classification tasks, which assign a single label to an entire picture, object detection provides a granular understanding by simultaneously predicting the class of an object (e.g., "person," "car," "dog") and its spatial location. This location is typically represented by a rectangular bounding box that encompasses the object, accompanied by a confidence score indicating the model's certainty. This dual capability—recognition plus localization—serves as the sensory foundation for modern Artificial Intelligence (AI) applications, enabling machines to interact meaningfully with their environment.
+Modern detectors rely heavily on Deep Learning (DL) architectures, specifically Convolutional Neural Networks (CNNs), to extract complex features from input images. The process begins with a training phase, where a model learns to recognize patterns using massive, labeled collections like the COCO dataset. During this phase, the algorithm optimizes its model weights to minimize prediction errors.
+When the model is deployed for inference, it scans new images to propose potential objects. Advanced algorithms then apply Non-Maximum Suppression (NMS) to filter out duplicate detections, ensuring that each distinct entity is highlighted only once. The accuracy of these predictions is often evaluated using the Intersection over Union (IoU) metric, which measures the overlap between the predicted box and the ground truth. Recent advancements have led to end-to-end architectures like YOLO26, which streamline this pipeline for exceptional speed and real-time inference capabilities on edge devices.
+It is crucial to distinguish object detection from related concepts to choose the right tool for a project:
+The versatility of object detection drives innovation across major industries. In the automotive sector, AI in autonomous vehicles relies critically on detection models to identify pedestrians, traffic signs, and other vehicles instantly to navigate safely. By processing video feeds from onboard cameras, these systems make split-second decisions that prevent accidents.
+Another prominent use case is found in AI in Retail. Automated checkout systems and smart inventory management robots use object detection to scan shelves, recognize products, and detect stock shortages or misplaced items. This automation streamlines supply chains and improves the customer experience by ensuring products are always available.
+Developers can easily implement detection workflows using the ultralytics
+Python package. The following
+example demonstrates how to load a pre-trained YOLO26 model
+and perform inference on an image.
+from ultralytics import YOLO
+# Load the latest YOLO26n model (nano version for speed)
+model = YOLO("yolo26n.pt")
+# Run inference on an image from a URL
+results = model("https://ultralytics.com/images/bus.jpg")
+# Display the results with bounding boxes
+results[0].show()
+For teams looking to scale their operations, the Ultralytics Platform offers a comprehensive environment to annotate data, train custom models in the cloud, and deploy them to various formats like ONNX or TensorRT. Utilizing such platforms simplifies the MLOps lifecycle, allowing engineers to focus on refining their applications rather than managing infrastructure.
