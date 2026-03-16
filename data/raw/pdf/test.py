@@ -1,29 +1,42 @@
-# Import libraries
-from ftplib import parse229
-import io
 from PyPDF2 import PdfReader
-
-import requests
 from bs4 import BeautifulSoup
+import requests
+import io
 
-# URL from which pdfs to be downloaded
-url = "https://arxiv.org/pdf/1807.05511"
 
-# Requests URL and get response object
+url = "https://openaccess.thecvf.com/content_CVPR_2020/papers/Tan_EfficientDet_Scalable_and_Efficient_Object_Detection_CVPR_2020_paper.pdf"
+
+
 response = requests.get(url)
-
-print(response.status_code)
-print(response.headers['content-type'])
-
 bytes = io.BytesIO(response.content)
 reader = PdfReader(bytes)
-print(len(reader.pages))
+s = ""
+for page in reader.pages:
+    s += page.extract_text()
 
+# Remove text before Abstract
+keywords = ['Abstract', 'ABSTRACT']
+for keyword in keywords:
+    if keyword in s:
+        s = s.split(keyword)[1]
 
-print(reader.pages[4].extract_text())
+# Remove Citations
+keywords = ['References', 'REFERENCES', 'Bibliography', 'BIBLIOGRAPHY']
+for keyword in keywords:
+    if keyword in s:
+        s = s.split(keyword)[0]
+        break
 
+# Remove Acknowledgement
+keywords = ['Acknowledgement', 'ACKNOWLEDGEMENT']
+for keyword in keywords:
+    if keyword in s:
+        s = s.split(keyword)[0]
 
-# for page in reader.pages:
-#     print(page.extract_text())
+# Clean whitespace
+lines = (line.strip() for line in s.splitlines())
+text = '\n'.join(line for line in lines if line)
 
-print("All PDF files downloaded")
+# Save to file
+with open("file.txt", "w", encoding="utf-8") as f:
+    f.write(text)
