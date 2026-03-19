@@ -1,4 +1,3 @@
-# data/raw/pdf/resources.py
 """Research papers - PDF format"""
 
 RESOURCES = [
@@ -9,10 +8,6 @@ RESOURCES = [
     {
         "title": "Object_Detection_20_Years_Survey",
         "url": "https://arxiv.org/pdf/1905.05055",
-    },
-    {
-        "title": "Object_Detection_Review_Research",
-        "url": "https://www.researchgate.net/profile/Yali-Amit/publication/339792032_Object_Detection/links/5ff7429345851553a02adcc0/Object-Detection.pdf",
     },
     {
         "title": "Fast_YOLO_Real_Time_Embedded_Detection",
