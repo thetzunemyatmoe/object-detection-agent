@@ -24,15 +24,11 @@ RESEARCH PAPERS:
    URL: https://arxiv.org/pdf/1905.05055
    Format: pdf
 
-3. Paper: Object Detection
-   URL: https://www.researchgate.net/profile/Yali-Amit/publication/339792032_Object_Detection/links/5ff7429345851553a02adcc0/Object-Detection.pdf
-   Format: pdf
-
-4. Paper: Fast YOLO: A fast you only look once system for real-time embedded object detection in video
+3. Paper: Fast YOLO: A fast you only look once system for real-time embedded object detection in video
    URL: https://arxiv.org/pdf/1709.05943
    Format: pdf
 
-5. Paper: You only look once: Unified, real-time object detection
+4. Paper: You only look once: Unified, real-time object detection
    URL: https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Redmon_You_Only_Look_CVPR_2016_paper.pdf
    Format: pdf
 
@@ -80,19 +76,7 @@ TUTORIALS:
    URL: https://medium.com/@kattarajesh2001/object-detection-part-3-one-stage-detectors-yolo-a4a6b4dd2d33
    Type: html
 
-4. Title: Convolutional Neural Network From Scratch
-   URL: https://medium.com/@kattarajesh2001/convolutional-neural-network-from-scratch-0d7513d62923
-   Type: html
-
-5. Title: Convolutional Neural Networks In Depth
-   URL: https://medium.com/@kattarajesh2001/convolutional-neural-networks-in-depth-c2fb81ebc2b2
-   Type: html
-
-6. Title: Activation Functions In Depth
-   URL: https://medium.com/@kattarajesh2001/activation-functions-in-depth-3bd653f88ec7
-   Type: html
-
-7. Title: Object Detection: State of the Art and Modern Approaches
+4. Title: Object Detection: State of the Art and Modern Approaches
    URL: https://medium.com/@saifhajsalem12/object-detection-state-of-the-art-and-modern-approaches-eaa5e6bfb46b
    Type: html
 
