@@ -9,7 +9,7 @@ import requests
 import io
 
 
-def process_pdf(id, url, title):
+def process_pdf(url):
     try:
         response = requests.get(url)
         byte_steam = io.BytesIO(response.content)
@@ -41,14 +41,13 @@ def process_pdf(id, url, title):
         lines = (line.strip() for line in s.splitlines())
         content = '\n'.join(line for line in lines if line)
 
-        # Save to file
-        save_data(id, content, title, url, "pdf")
+        return content
     except Exception as e:
         print(f"Error: {str(e)}")
-        return False
+        return ""
 
 
-def process_html(id, url, title, category):
+def process_html(url):
     try:
 
         headers = {
@@ -81,22 +80,14 @@ def process_html(id, url, title, category):
                   for line in lines for phrase in line.split("  "))
         content = '\n'.join(chunk for chunk in chunks if chunk)
 
-        # Save to file
-        save_data(id, content, title, url, category)
+        return content
 
     except Exception as e:
         print(f"Error: {str(e)}")
+        return ""
 
 
-def save_data(id, content, soruce, url, category):
+def save_data(data):
 
-    data = {
-        "id": id,
-        "source": soruce,
-        "url": url,
-        "category": category,
-        "content": content
-    }
-
-    with open("data/processed/data.json", "a") as f:
-        json.dump(data, f)
+    with open("data/processed/data.json", "w") as f:
+        json.dump(data, f, indent=2)

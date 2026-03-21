@@ -66,45 +66,34 @@ RESOURCES = [
         "category": "Paper"
     },
     {
-        "title": "Object_Detection_Part1_Introduction_Medium",
-        "url": "https://medium.com/@kattarajesh2001/object-detection-part-1-introduction-to-object-detection-321f1fd56295",
+        "title": "Object Detection using yolov8",
+        "url": "https://www.geeksforgeeks.org/machine-learning/object-detection-using-yolov8/",
         "format": "html",
         "category": "Tutorial"
     },
     {
-        "title": "Object_Detection_Part2_TwoStage_Medium",
-        "url": "https://medium.com/@kattarajesh2001/object-detection-part-2-two-stage-detectors-r-cnn-fast-r-cnn-faster-r-cnn-026e5fac5dd0",
+        "title": "Explore Ultralytics YOLOv8",
+        "url": "https://docs.ultralytics.com/models/yolov8/",
         "format": "html",
         "category": "Tutorial"
     },
     {
-        "title": "Object_Detection_Part3_OneStage_YOLO_Medium",
-        "url": "https://medium.com/@kattarajesh2001/object-detection-part-3-one-stage-detectors-yolo-a4a6b4dd2d33",
+        "title": "How to Prepare Data to Train the YOLOv8 Model",
+        "url": "https://www.freecodecamp.org/news/how-to-detect-objects-in-images-using-yolov8/",
         "format": "html",
         "category": "Tutorial"
     },
     {
-        "title": "CNN_From_Scratch_Medium",
-        "url": "https://medium.com/@kattarajesh2001/convolutional-neural-network-from-scratch-0d7513d62923",
+        "title": "Explore Ultralytics YOLOv8",
+        "url": "https://yolov8.com/",
         "format": "html",
         "category": "Tutorial"
     },
     {
-        "title": "CNN_In_Depth_Medium",
-        "url": "https://medium.com/@kattarajesh2001/convolutional-neural-networks-in-depth-c2fb81ebc2b2",
+        "title": "Object detection by using YOLOv8",
+        "url": "https://www.kaggle.com/code/maryamnoroozi68/object-detection-by-using-yolov8",
         "format": "html",
         "category": "Tutorial"
     },
-    {
-        "title": "Activation_Functions_In_Depth_Medium",
-        "url": "https://medium.com/@kattarajesh2001/activation-functions-in-depth-3bd653f88ec7",
-        "format": "html",
-        "category": "Tutorial"
-    },
-    {
-        "title": "Object_Detection_State_of_Art_Modern_Approaches_Medium",
-        "url": "https://medium.com/@saifhajsalem12/object-detection-state-of-the-art-and-modern-approaches-eaa5e6bfb46b",
-        "format": "html",
-        "category": "Tutorial"
-    },
+
 ]
